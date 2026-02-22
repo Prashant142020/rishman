@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import Link from 'next/link';
+import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,10 +14,7 @@ export function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link
-            href="/"
-            className="flex-shrink-0 font-bold text-xl text-primary"
-          >
+          <Link href="/" className="shrink-0 font-bold text-xl text-primary">
             Rishman Jot Kaur Chahal
           </Link>
 
@@ -30,17 +27,35 @@ export function Navbar() {
               About
             </Link>
             <Link
+              href="/publications"
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Publications
+            </Link>
+            <Link
+              href="/teaching"
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Teaching
+            </Link>
+            <Link
               href="/projects"
               className="text-foreground hover:text-primary transition-colors"
             >
               Projects
             </Link>
             <Link
+              href="/research-group"
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Research Group
+            </Link>
+            {/* <Link
               href="/contact"
               className="text-foreground hover:text-primary transition-colors"
             >
               Contact
-            </Link>
+            </Link> */}
           </div>
 
           {/* Mobile menu button */}
@@ -62,21 +77,38 @@ export function Navbar() {
             >
               About
             </Link>
+
             <Link
-              href="/projects"
+              href="/publications"
               className="block px-3 py-2 rounded-md text-foreground hover:bg-secondary transition-colors"
               onClick={() => setIsOpen(false)}
             >
-              Projects
+              Publications
             </Link>
 
             <Link
+              href="/teaching"
+              className="block px-3 py-2 rounded-md text-foreground hover:bg-secondary transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Teaching
+            </Link>
+
+            <Link
+              href="/research-group"
+              className="block px-3 py-2 rounded-md text-foreground hover:bg-secondary transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Research Group
+            </Link>
+
+            {/* <Link
               href="/contact"
               className="block px-3 py-2 rounded-md text-foreground hover:bg-secondary transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Contact
-            </Link>
+            </Link> */}
           </div>
         )}
       </div>

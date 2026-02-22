@@ -11,10 +11,22 @@ export default function ProfileIntro() {
       </div>
       <div className="space-y-4 text-base leading-relaxed text-foreground/90 max-w-3xl">
         <p>
-          I am an Assistant Professor at the Indian Institute of Technology
-          Roorkee, specializing in Economics and Data Science. My research
-          interests span broad areas of economics, with a particular focus on
-          development economics and computational methods.
+          Dr. Chahal, is currently working as an assistant professor of
+          economics in the Department of HSS at Indian Institute of Technology
+          Roorkee (IITR) and also a joint faculty at the Mehta School of Data
+          Science and Artificial Intelligence at IITR. She primarily works in
+          Governance and Institutions, Financial Economics, Computational
+          General Equilibrium (CGE) Modelling, Time Series Data analysis and
+          Applied ML and AI. She has prestigious publications in Energy
+          Economics, International Review of Financial Analysis, Research in
+          International Business and Finance, Journal of Behavioural and
+          Experimental Finance and others along with prestigious conferences
+          like WEAI, ASSA/AEA, ADBI. She is also associated with 05 projects
+          supported by TIH – IIT Kharagpur, Ministry of Road Transport and
+          Highways (MoRTH), University Grants Commission (UGC), SmartAlpha Pvt.
+          Ltd. and IITR. Before joining IITR she also worked as a researcher
+          with UNEP, Montreal, Canada and completed her PhD in Economics from
+          IIT Kanpur.
         </p>
         <p>
           With a strong academic background including a PhD in Economics from
@@ -23,10 +35,10 @@ export default function ProfileIntro() {
           collaboration, especially through the Mehta Family School of Data
           Science and AI.
         </p>
-        <p>
+        {/* <p>
           Explore my educational background, professional experience, research
           visits, and administrative contributions through the sections above.
-        </p>
+        </p> */}
       </div>
     </div>
   );

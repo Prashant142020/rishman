@@ -1,8 +1,11 @@
+import { TeachingEngagements } from '@/components/section/teaching-engagements';
 
 const page = () => {
   return (
-    <div>page</div>
-  )
-}
+    <main className="min-h-screen bg-background mt-4">
+      <TeachingEngagements />
+    </main>
+  );
+};
 
-export default page
+export default page;
