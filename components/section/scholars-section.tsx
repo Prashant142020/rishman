@@ -22,7 +22,8 @@ interface Scholar {
 
 const SCHOLARS_DATA: Scholar[] = [
   {
-    title: 'Examining the role of Investor Sentiment in Financial Markets',
+    title:
+      ' Investor sentiment and uncertainty dynamics in securities markets.',
     startDate: '20 Jul 2021',
     endDate: 'Present',
     otherSupervisors: '',
@@ -73,14 +74,14 @@ const SCHOLARS_DATA: Scholar[] = [
   },
   {
     title: 'Essays on AI-Driven Portfolio Optimization and Forecasting',
-    startDate: '24 Jul 2023',
+    startDate: '14 Jul 2023',
     endDate: 'Present',
     otherSupervisors: '',
     scholar: 'Manish',
     imageId: 7,
   },
   {
-    title: 'Essays on Urban Sprawl Patterns in India',
+    title: 'Essays on Urban Sprawl in India',
     startDate: '05 Jan 2024',
     endDate: 'Present',
     otherSupervisors: '',
@@ -88,7 +89,7 @@ const SCHOLARS_DATA: Scholar[] = [
     imageId: 8,
   },
   {
-    title: 'yet to decide, India',
+    title: 'Yet to decide ',
     startDate: '21 Jul 2025',
     endDate: 'Present',
     otherSupervisors: '',
@@ -96,18 +97,34 @@ const SCHOLARS_DATA: Scholar[] = [
     imageId: 9,
   },
   {
-    title: 'yet to decide, India',
+    title: 'Yet to decide ',
     startDate: '21 Jul 2025',
     endDate: 'Present',
     otherSupervisors: '',
     scholar: 'Anushka',
     imageId: 10,
   },
+  {
+    title: 'Yet to decide ',
+    startDate: '21 Jul 2025',
+    endDate: 'Present',
+    otherSupervisors: '',
+    scholar: 'Mayur Pandey',
+    imageId: 11,
+  },
+  {
+    title: 'Yet to decide ',
+    startDate: '21 Jul 2025',
+    endDate: 'Present',
+    otherSupervisors: '',
+    scholar: 'Suraj Pal Kurrey',
+    imageId: 12,
+  },
 ];
 
 export default function ScholarsSection() {
   return (
-    <section className="py-16 px-4 bg-gradient-to-b from-background to-secondary/5">
+    <section className="py-24 px-4 bg-gradient-to-b from-background to-secondary/5">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-foreground">
@@ -125,14 +142,14 @@ export default function ScholarsSection() {
               className="overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full"
             >
               {/* Scholar Image - Larger vertical section */}
-              <div className="relative w-full h-72 overflow-hidden">
+              <div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-72 overflow-hidden">
                 {scholar.imageId ? (
                   <Image
                     src={`/scholars/${scholar.imageId}.jpg`}
                     alt={scholar.scholar}
                     fill
-                    sizes="100vw"
-                    className="object-cover"
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 50vw, 25vw"
+                    className="object-contain p-1"
                     priority
                   />
                 ) : (
