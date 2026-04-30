@@ -97,7 +97,7 @@ const coPiData2 = [
 
 export default function ResearchTables() {
   return (
-    <div className="max-w-6xl mx-auto space-y-12">
+    <div className="max-w-6xl mx-auto space-y-12 ">
       <ResearchTable
         title="Details of Sponsored Research Project as a Project Investigator:"
         columns={coPiColumns2}

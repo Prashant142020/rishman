@@ -2,7 +2,7 @@ import ResearchTables from "@/components/section/research-tables"
 
 const page = () => {
   return (
-    <div> 
+    <div className=""> 
       <ResearchTables />
     </div>
   )
