@@ -45,6 +45,12 @@ export function Navbar() {
               Projects
             </Link>
             <Link
+              href="/supervision"
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Supervision
+            </Link>
+            <Link
               href="/research-group"
               className="text-foreground hover:text-primary transition-colors"
             >
@@ -92,6 +98,20 @@ export function Navbar() {
               onClick={() => setIsOpen(false)}
             >
               Teaching
+            </Link>
+            <Link
+              href="/projects"
+              className="block px-3 py-2 rounded-md text-foreground hover:bg-secondary transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Projects
+            </Link>
+            <Link
+              href="/supervision"
+              className="block px-3 py-2 rounded-md text-foreground hover:bg-secondary transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Supervision
             </Link>
 
             <Link

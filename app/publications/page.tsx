@@ -1,5 +1,4 @@
 import { Publications } from '@/components/section/publications';
-import { FileText } from 'lucide-react';
 
 const page = () => {
   return (

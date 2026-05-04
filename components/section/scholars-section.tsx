@@ -1,12 +1,6 @@
 'use client';
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
 
@@ -106,7 +100,7 @@ const SCHOLARS_DATA: Scholar[] = [
   },
   {
     title: 'Yet to decide ',
-    startDate: '21 Jul 2025',
+    startDate: '12 Jan 2026',
     endDate: 'Present',
     otherSupervisors: '',
     scholar: 'Mayur Pandey',
@@ -114,7 +108,7 @@ const SCHOLARS_DATA: Scholar[] = [
   },
   {
     title: 'Yet to decide ',
-    startDate: '21 Jul 2025',
+    startDate: '12 Jan 2026',
     endDate: 'Present',
     otherSupervisors: '',
     scholar: 'Suraj Pal Kurrey',
@@ -124,7 +118,7 @@ const SCHOLARS_DATA: Scholar[] = [
 
 export default function ScholarsSection() {
   return (
-    <section className="py-24 px-4 bg-gradient-to-b from-background to-secondary/5">
+    <section className="py-24 px-4 bg-linear-to-b from-background to-secondary/5">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-foreground">
@@ -153,7 +147,7 @@ export default function ScholarsSection() {
                     priority
                   />
                 ) : (
-                  <div className="flex items-center justify-center w-full h-full bg-gradient-to-br from-primary/20 to-primary/5">
+                  <div className="flex items-center justify-center w-full h-full bg-linear-to-br from-primary/20 to-primary/5">
                     <div className="text-center">
                       <div className="text-6xl font-bold text-primary/40 mb-2">
                         {scholar.scholar.charAt(0)}
@@ -172,7 +166,7 @@ export default function ScholarsSection() {
                 </CardTitle>
               </CardHeader>
 
-              <CardContent className="flex-grow space-y-3">
+              <CardContent className="grow space-y-3">
                 <div>
                   <p className="text-xs text-muted-foreground line-clamp-2">
                     {scholar.title}
