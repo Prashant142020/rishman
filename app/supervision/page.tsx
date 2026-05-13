@@ -155,9 +155,9 @@ export default function SupervisionPage() {
           <p className="text-lg text-muted-foreground">
             Prof. Rishman Jot Kaur Chahal
           </p>
-          <p className="text-sm text-muted-foreground mt-2">
+         {/* <p className="text-sm text-muted-foreground mt-2">
             M. Tech. Dissertation & Research Records
-          </p>
+          </p> */}
         </div>
       </div>
 

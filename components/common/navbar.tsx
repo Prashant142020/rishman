@@ -20,12 +20,12 @@ export function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <Link
+            {/* <Link
               href="/about"
               className="text-foreground hover:text-primary transition-colors"
             >
               About
-            </Link>
+            </Link> */}
             <Link
               href="/publications"
               className="text-foreground hover:text-primary transition-colors"
@@ -76,15 +76,16 @@ export function Navbar() {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden pb-4 space-y-2">
-            <Link
+            {/* <Link
               href="/about"
               className="block px-3 py-2 rounded-md text-foreground hover:bg-secondary transition-colors"
               onClick={() => setIsOpen(false)}
             >
               About
-            </Link>
+            </Link> */}
 
             <Link
+            
               href="/publications"
               className="block px-3 py-2 rounded-md text-foreground hover:bg-secondary transition-colors"
               onClick={() => setIsOpen(false)}

@@ -1,3 +1,5 @@
+import { Button } from '@/components/ui/button';
+
 export default function ProfileIntro() {
   return (
     <div className="space-y-6">
@@ -29,16 +31,27 @@ export default function ProfileIntro() {
           IIT Kanpur.
         </p>
         <p>
-          With a strong academic background including a PhD in Economics from
-          IIT Kanpur, I am committed to advancing knowledge through rigorous
-          research and quality education. My work involves interdisciplinary
-          collaboration, especially through the Mehta Family School of Data
-          Science and AI.
+          With a strong academic background .She did her master's in economics
+          from Madras School of Economics and bachelor’s degree in Economics
+          (Honours) from Delhi University, I am committed to advancing knowledge
+          through rigorous research and quality education. My work involves
+          interdisciplinary collaboration, especially through the Mehta Family
+          School of Data Science and AI.
         </p>
         {/* <p>
           Explore my educational background, professional experience, research
           visits, and administrative contributions through the sections above.
         </p> */}
+
+        <div className="mt-4">
+          <a
+            href="/resume.pdf"
+            download
+            className="inline-flex items-center px-5 py-2.5 rounded-lg bg-black text-white hover:bg-gray-800 transition"
+          >
+            Download Resume
+          </a>
+        </div>
       </div>
     </div>
   );

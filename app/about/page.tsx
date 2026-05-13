@@ -11,8 +11,8 @@ const page = () => {
       <main className="max-w-4xl mx-auto px-4 py-20 md:px-8 space-y-16 mt-10">
         <ProfileIntro />
         <ExperienceSection />
-        <AdministrativeSection />
         <HonorsSection />
+        <AdministrativeSection />
         <VisitsSection />
         {/* <EducationSection /> */}
       </main>

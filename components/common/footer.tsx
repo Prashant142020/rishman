@@ -10,16 +10,16 @@ export function Footer() {
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* About Section */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-bold mb-4">About Me</h3>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Dedicated academic professional committed to advancing education
               and research in my field.
             </p>
-          </div>
+          </div> */}
 
           {/* Quick Links */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
@@ -48,7 +48,7 @@ export function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact Info */}
           <div>
