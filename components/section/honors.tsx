@@ -1,10 +1,19 @@
 export default function HonorsSection() {
   const honors = [
     {
-      title: 'Merit Certificate (HSSC)',
-      organization: 'CBSE',
-      year: '2010',
-      description: 'Awarded to top 0.1% successful candidates',
+      title:
+        'Best Paper Award at the Symposium on Ecology, Governance & Technology',
+      organization:
+        'Mehta Family School of Sustainability, IIT Indore, Indore, India',
+      year: '2026',
+      description:
+        'Best Paper Award at the Symposium on Ecology, Governance & Technology',
+    },
+    {
+      title: 'Datathon Challenge',
+      organization: 'NIUA, MoHUA',
+      year: '2023',
+      description: 'Recognition in national datathon competition',
     },
     {
       title: 'National Eligibility Test (NET) in Economics',
@@ -13,20 +22,10 @@ export default function HonorsSection() {
       description: 'Qualified National Eligibility Test',
     },
     {
-      title: 'Datathon Challenge',
-      organization: 'NIUA, MoHUA',
-      year: '2023',
-      description: 'Recognition in national datathon competition',
-    },
-
-    {
-      title:
-        'Best Paper Award at the Symposium on Ecology, Governance & Technology',
-      organization:
-        'Mehta Family School of Sustainability, IIT Indore, Indore, India',
-      year: '2026',
-      description:
-        'Best Paper Award at the Symposium on Ecology, Governance & Technology',
+      title: 'Merit Certificate (HSSC)',
+      organization: 'CBSE',
+      year: '2010',
+      description: 'Awarded to top 0.1% successful candidates',
     },
   ];
 

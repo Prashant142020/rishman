@@ -1,36 +1,236 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# web-page
 
-## Getting Started
+A modern web application built using Next.js, TypeScript, and pnpm.
 
-First, run the development server:
+---
+
+# 🚀 Tech Stack
+
+- Next.js
+- TypeScript
+- React
+- pnpm
+- Tailwind CSS (if applicable)
+
+---
+
+# 📦 Prerequisites
+
+Before starting, install the following software:
+
+| Software | Version |
+| -------- | ------- |
+| Node.js  | 18+     |
+| pnpm     | Latest  |
+| Git      | Latest  |
+
+---
+
+# ⚙️ Installation Guide
+
+## 1. Clone Repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <your-repository-url>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Move into the project folder:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+cd <project-folder>
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 2. Install Dependencies
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+pnpm install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+or
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+pnpm i
+```
+
+---
+
+# 🖥️ Development Setup
+
+## Run Development Server
+
+```bash
+pnpm dev
+```
+
+Application will run on:
+
+```txt
+http://localhost:3000
+```
+
+Open the URL in your browser.
+
+---
+
+# 🛠️ Production Build
+
+To create a production build:
+
+```bash
+pnpm build
+```
+
+---
+
+# ▶️ Start Production Server
+
+```bash
+pnpm start
+```
+
+---
+
+# 📁 Project Structure
+
+```txt
+project-root/
+│
+├── app/                # App Router pages
+├── components/         # Reusable components
+├── public/             # Static assets
+├── styles/             # Styling files
+├── package.json
+├── pnpm-lock.yaml
+└── next.config.ts
+```
+
+---
+
+# ✨ Development Guide
+
+## Edit Main Page
+
+Modify:
+
+```txt
+app/page.tsx
+```
+
+Changes auto-refresh during development.
+
+---
+
+## Create Components
+
+Add reusable components inside:
+
+```txt
+components/
+```
+
+Example:
+
+```tsx
+export default function Button() {
+  return <button>Click Me</button>;
+}
+```
+
+---
+
+# 🎨 Styling
+
+Global styles are usually located in:
+
+```txt
+app/globals.css
+```
+
+---
+
+# 🔤 Font Optimization
+
+This project uses:
+
+- `next/font`
+- Geist font family
+
+Documentation:
+
+- https://nextjs.org/docs/app/building-your-application/optimizing/fonts
+
+---
+
+# 📚 Useful Commands
+
+| Command        | Description             |
+| -------------- | ----------------------- |
+| `pnpm install` | Install dependencies    |
+| `pnpm dev`     | Run development server  |
+| `pnpm build`   | Create production build |
+| `pnpm start`   | Start production server |
+| `pnpm lint`    | Run ESLint              |
+
+---
+
+# 🌐 Deployment
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push project to GitHub
+2. Open:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   https://vercel.com/new
+
+3. Import repository
+4. Click Deploy
+
+---
+
+# 🔧 Environment Variables
+
+Create `.env.local`:
+
+```env
+NEXT_PUBLIC_API_URL=http://localhost:3000/api
+```
+
+---
+
+# 🧹 Clean Install
+
+If dependencies break:
+
+```bash
+rm -rf node_modules
+rm pnpm-lock.yaml
+pnpm install
+```
+
+---
+
+# 🚨 Common Issues
+
+## Port Already in Use
+
+Run on another port:
+
+```bash
+pnpm dev -- -p 3001
+```
+
+---
+
+# 📖 Learn More
+
+- https://nextjs.org/docs
+- https://nextjs.org/learn
+- https://github.com/vercel/next.js
+
+---
+
+# 📄 License
+
+This project is licensed under your preferred license.

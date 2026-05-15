@@ -130,7 +130,7 @@ const supervisionData = {
       name: 'Akshat Trehan',
       year: '2026',
       title:
-        'Urban Expansion and its Influence on Local Climate: Evidence from Dehradun and Jammu',
+        'Urban Expansion and its Influence on Local Climate in Himalayan Cities : Evidence from Dehradun and Jammu',
     },
     {
       name: 'Moulik Gupta',
@@ -155,7 +155,7 @@ export default function SupervisionPage() {
           <p className="text-lg text-muted-foreground">
             Prof. Rishman Jot Kaur Chahal
           </p>
-         {/* <p className="text-sm text-muted-foreground mt-2">
+          {/* <p className="text-sm text-muted-foreground mt-2">
             M. Tech. Dissertation & Research Records
           </p> */}
         </div>
